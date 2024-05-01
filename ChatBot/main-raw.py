@@ -12,10 +12,10 @@ else:
 # kernel now ready for use
 while True:
     message = raw_input("Enter your message to the bot: ")
-    if message == "quit":
-        exit()
-    elif message == "save":
+    if message == "save":
         kernel.saveBrain("bot_brain.brn")
+    elif message == "quit":
+        exit()
     else:
         bot_response = kernel.respond(message)
         print bot_response
